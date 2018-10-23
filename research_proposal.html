@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="research_proposal_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="research_proposal_files/reveal.js-3.3.0.1/css/theme/black.css" id="theme">
+
+<style type="text/css">
+.reveal section img {
+  background: rgba(255, 255, 255, 0.85);
+}
+</style>
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="research_proposal.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="climate-change-air-pollution-and-perinatal-health-the-combined-effects-of-temperature-and-air-pollution-in-sensitive-populations" class="slide level2" data-background="#ffffff">
+<h2>Climate change, air pollution, and perinatal health: the combined effects of temperature and air pollution in sensitive populations</h2>
+<div style="text-align: right">
+<h3 id="phd-research-proposal">PhD Research Proposal</h3>
+</div>
+<p>Ian Hough</p>
+<p>2018-10-16</p>
+<p>Advisors Itai Kloog &amp; Johanna Lepeule</p>
+<div class="logos">
+<img src="img/uga.png" alt="uga-logo" /> <img src="img/iab_coul.png" alt="iab-logo" /> <img src="img/bgu.png" alt="bgu-logo" />
+</div>
+</section>
+<section id="outline" class="slide level2">
+<h2>Outline</h2>
+<ol type="1">
+<li>Context
+<ol type="1">
+<li>Overview</li>
+<li>Adverse birth outcomes</li>
+<li>Ambient temperature &amp; particulate matter</li>
+</ol></li>
+<li>Proposed research
+<ol type="1">
+<li>Objectives</li>
+<li>Exposure models</li>
+<li>Birth outcomes study</li>
+</ol></li>
+</ol>
+</section>
+<section id="context" class="slide level2 center">
+<h2>Context</h2>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<div class="center">
+<img src="img/big_picture.png" alt="big_picture" />
+</div>
+</section>
+<section id="adverse-birth-outcomes" class="slide level2">
+<h2>Adverse birth outcomes</h2>
+<h3 id="preterm-birth-37-weeks-gestation">Preterm birth (&lt;37 weeks gestation)</h3>
+<ul>
+<li>Leading cause of child mortality <span class="citation" data-cites="Liu2016">(Liu et al., 2016)</span></li>
+<li>11% of all births and increasing <span class="citation" data-cites="Harrison2016">(Harrison and Goldenberg, 2016)</span></li>
+<li>Sequalae in childhood and adulthood (e.g. asthma, cerebral palsy, behavioural problems) <span class="citation" data-cites="McCormick2011">(McCormick et al., 2011)</span></li>
+</ul>
+<h3 id="term-low-birth-weight-2500-g">Term low birth weight (&lt;2500 g)</h3>
+<ul>
+<li>Increased morbidity and mortality in childhood and adulthood <span class="citation" data-cites="Barker2004 Belbasis2016">(Barker, 2004; Belbasis et al., 2016)</span></li>
+</ul>
+</section>
+<section id="ambient-temperature-ta" class="slide level2">
+<h2>Ambient temperature (T<sub>a</sub>)</h2>
+<ul>
+<li>Heat, cold, or variable T<sub>a</sub> can increase risk <span class="citation" data-cites="Zhang2017">(Zhang et al., 2017)</span></li>
+<li>Response may depend on local population &amp; climate</li>
+<li>Hard to synthesize findings</li>
+</ul>
+<h5 id="section"></h5>
+<div style="float: left">
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Preterm birth</th>
+<th>Birth weight</th>
+<th>Term low birth weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exposure</td>
+<td>Cold (&lt;10th %ile)</td>
+<td>IQR Ta increase</td>
+<td>Heat (&gt;95th %ile)</td>
+</tr>
+<tr class="even">
+<td>Window</td>
+<td>Weeks 1–7</td>
+<td>Last 30 days</td>
+<td>Trimester 3</td>
+</tr>
+<tr class="odd">
+<td>Statistic</td>
+<td>Relative risk</td>
+<td>Decrease</td>
+<td>Odds ratio</td>
+</tr>
+<tr class="even">
+<td>Effect</td>
+<td>1.09 [1.04–1.15]<sup>a</sup></td>
+<td>16.6 g [5.9–27.4]<sup>b</sup></td>
+<td>1.31 [1.15–1.49]<sup>c</sup></td>
+</tr>
+<tr class="odd">
+<td>Study</td>
+<td><span class="citation" data-cites="Ha2017a">(Ha, D. Liu, et al., 2017)</span></td>
+<td><span class="citation" data-cites="Kloog2015">(Kloog et al., 2015)</span></td>
+<td><span class="citation" data-cites="Ha2017b">(Ha, Y. Zhu, et al., 2017)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="particulate-matter-pm" class="slide level2">
+<h2>Particulate matter (PM)</h2>
+<h4 id="pm10-10-mugm3-entire-pregnancy">PM<sub>10</sub> ↑ 10 <span class="math inline">\(\mu\)</span>g/m<sup>3</sup> entire pregnancy</h4>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Preterm birth</th>
+<th>Birth weight</th>
+<th>Term low birth weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistic</td>
+<td>Pooled odds ratio</td>
+<td>Pooled decrease</td>
+<td>Too few studies</td>
+</tr>
+<tr class="even">
+<td>Effect</td>
+<td>0.97 [0.86–1.08]</td>
+<td>10.3 g [7.1–13.6]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Study</td>
+<td><span class="citation" data-cites="Lamichhane2015">(Lamichhane et al., 2015)</span></td>
+<td><span class="citation" data-cites="Lamichhane2015">(Lamichhane et al., 2015)</span></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="pm2.5-10-mugm3-entire-pregnancy">PM<sub>2.5</sub> ↑ 10 <span class="math inline">\(\mu\)</span>g/m<sup>3</sup> entire pregnancy</h4>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Preterm birth</th>
+<th>Birth weight</th>
+<th>Term low birth weight</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistic</td>
+<td>Pooled odds ratio</td>
+<td>Pooled decrease</td>
+<td>Pooled odds ratio</td>
+</tr>
+<tr class="even">
+<td>Effect</td>
+<td>1.13 [1.03–1.24]</td>
+<td>15.9 g [5.0–26.8]</td>
+<td>1.09 [1.03–1.15]</td>
+</tr>
+<tr class="odd">
+<td>Study</td>
+<td><span class="citation" data-cites="Sun2015">(Sun et al., 2015)</span></td>
+<td><span class="citation" data-cites="Sun2016">(Sun et al., 2016)</span></td>
+<td><span class="citation" data-cites="Sun2016">(Sun et al., 2016)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="proposed-research" class="slide level2 center">
+<h2>Proposed research</h2>
+</section>
+<section id="objectives" class="slide level2">
+<h2>Objectives</h2>
+<ol type="1">
+<li>Model daily min, mean, and max T<sub>a</sub> in France 2000–2016
+<ul>
+<li>1 km estimates entire area</li>
+<li>200 m estimates for urban areas</li>
+</ul></li>
+<li>Model daily PM<sub>10</sub> and PM<sub>2.5</sub> in France
+<ul>
+<li>1 km estimates entire area</li>
+<li>200 m estimates for urban areas</li>
+</ul></li>
+<li>Study associations between T<sub>a</sub>, PM, and birth outcomes
+<ul>
+<li>Windows of susceptibility</li>
+<li>Acclimatization to T<sub>a</sub></li>
+<li>Interactions between T<sub>a</sub> and PM</li>
+</ul></li>
+</ol>
+</section>
+<section id="exposure-models" class="slide level2 center">
+<h2>Exposure models</h2>
+</section>
+<section id="why-model-ta-and-pm" class="slide level2">
+<h2>Why model T<sub>a</sub> and PM?</h2>
+<p>Sparse monitoring networks</p>
+<p>→ Error in exposure estimate</p>
+<p>    → May bias effect estimates towards null</p>
+</section>
+<section class="slide level2">
+
+<p><img src="img/map_ta_stations.jpg" alt="Meteo stations" /></p>
+</section>
+<section class="slide level2">
+
+<p><img src="img/map_pm_stations.jpg" alt="PM stations" /></p>
+</section>
+<section id="modelling-approaches" class="slide level2">
+<h2>Modelling approaches</h2>
+<h3 id="physical-models">Physical models</h3>
+<ul>
+<li>Numerical weather prediction → complex</li>
+<li>Dispersion / chemical transport → complex</li>
+</ul>
+<h3 id="statistical-models">Statistical models</h3>
+<ul>
+<li>Inverse distance weighting → poor performance</li>
+<li>Land use regression → low temporal variability</li>
+<li><strong><em>Hybrid models</em></strong></li>
+</ul>
+</section>
+<section id="hybrid-statistical-models" class="slide level2">
+<h2>Hybrid statistical models</h2>
+<h3 id="satellite-data-other-spatial-predictors">1. Satellite data (&amp; other spatial predictors)</h3>
+<ul>
+<li>T<sub>a</sub> ← land surface temperature (LST)</li>
+<li>PM ← aerosol optical depth (AOD)</li>
+</ul>
+<h3 id="modis-terra-aqua">MODIS (Terra + Aqua)</h3>
+<ul>
+<li>1 km spatial resolution</li>
+<li>LST 2x / day + 2x / night</li>
+<li>AOD 2x / day</li>
+<li>Free ready-to-use products (LST and AOD)</li>
+</ul>
+</section>
+<section id="hybrid-statistical-models-1" class="slide level2">
+<h2>Hybrid statistical models</h2>
+<h3 id="statistical-model">2. Statistical model</h3>
+<ul>
+<li>Linear regression</li>
+<li>Geographically weighted regression</li>
+<li>Spatiotemporal regression-kriging</li>
+<li><em>Linear mixed models</em> <span class="citation" data-cites="Kloog2014 Kloog2017 Just2015 Shtein2018">(Just et al., 2015; Kloog et al., 2014, 2017; Shtein et al., 2018)</span></li>
+<li>Random forest, gradient boosting, elastic net, etc.</li>
+</ul>
+</section>
+<section id="linear-mixed-model-approach" class="slide level2">
+<h2>Linear mixed model approach</h2>
+<p><img src="img/stage0.png" alt="grid" /></p>
+</section>
+<section id="stage-1-calibration" class="slide level2">
+<h2>Stage 1: calibration</h2>
+<p><img src="img/stage1.png" alt="stage1" /></p>
+<p><span class="math inline">\(T_a = (\alpha + \mu_{jr}) + (\beta_1 + \nu_{jr}) \cdot LST + \beta_2 \cdot Emissivity + \\ \; \; \; \; \; \; \; \; \beta_3 \cdot NDVI + \beta_4 \cdot Elevation + \beta_5 \cdot Population + \\ \; \; \; \; \; \; \; \; \beta_6 \cdot Land Cover + e\)</span></p>
+<p><em>j</em> = day</p>
+<p><em>r</em> = climatic region</p>
+</section>
+<section id="stage-2-prediction" class="slide level2">
+<h2>Stage 2: prediction</h2>
+<p><img src="img/stage2.png" alt="stage2" /></p>
+</section>
+<section id="stage-3-gap-filling" class="slide level2">
+<h2>Stage 3: gap filling</h2>
+<p><img src="img/stage3.png" alt="stage3" /></p>
+<p><span class="math inline">\(T_{a\ predicted} = (\alpha + \mu_{ip}) + (\beta_1 + \nu_{ip}) \cdot T_{IDW} + e\)</span></p>
+<p><em>i</em> = grid cell</p>
+<p><em>p</em> = two-month period</p>
+</section>
+<section class="slide level2">
+
+<p><img src="img/map_ta_preds.jpg" alt="Ta predictions" /></p>
+</section>
+<section id="model-performance" class="slide level2">
+<h2>Model performance</h2>
+<h3 id="cross-validated-1-km-predictions">Cross-validated 1 km predictions</h3>
+<table>
+<thead>
+<tr class="header">
+<th>2000–2016</th>
+<th>R<sup>2</sup></th>
+<th>RMSE</th>
+<th>Spatial R<sup>2</sup></th>
+<th>Temporal R<sup>2</sup></th>
+<th>Spatial RMSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T<sub>a</sub> min</td>
+<td>0.92</td>
+<td>1.89</td>
+<td>0.83</td>
+<td>0.93</td>
+<td>0.97</td>
+</tr>
+<tr class="even">
+<td>T<sub>a</sub> mean</td>
+<td>0.97</td>
+<td>1.29</td>
+<td>0.95</td>
+<td>0.97</td>
+<td>0.57</td>
+</tr>
+<tr class="odd">
+<td>T<sub>a</sub> max</td>
+<td>0.95</td>
+<td>1.81</td>
+<td>0.89</td>
+<td>0.96</td>
+<td>0.99</td>
+</tr>
+</tbody>
+</table>
+<h3 id="improvement-over-previous-model-kloog2017">Improvement over previous model <span class="citation" data-cites="Kloog2017">(Kloog et al., 2017)</span></h3>
+<table>
+<thead>
+<tr class="header">
+<th>2000–2011</th>
+<th>R<sup>2</sup></th>
+<th>RMSE</th>
+<th>Spatial R<sup>2</sup></th>
+<th>Temporal R<sup>2</sup></th>
+<th>Spatial RMSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>T<sub>a</sub> mean</td>
+<td>0.02</td>
+<td>0.25</td>
+<td>0.04</td>
+<td>0.01</td>
+<td>0.09</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section class="slide level2">
+
+<p><img src="img/map_grenoble.jpg" alt="Grenoble" /></p>
+</section>
+<section id="urban-200-m-predictions" class="slide level2">
+<h2>Urban 200 m predictions</h2>
+<h3 id="landsat-5-7-8-etm-tirs">Landsat 5 / 7 / 8 (ETM+ / TIRS)</h3>
+<ul>
+<li>60 m / 120 m spatial resolution</li>
+<li>One overpass every 16 days (sometimes 8 days)</li>
+<li>No precalculated LST (at-satellite brightness temperature)</li>
+</ul>
+<h3 id="building-footprints-height">Building footprints + height</h3>
+<ul>
+<li>Skyview factor</li>
+</ul>
+</section>
+<section id="stage-4-urban-calibration" class="slide level2">
+<h2>Stage 4: urban calibration</h2>
+<p><img src="img/stage4.png" alt="stage4" /></p>
+<p><span class="math inline">\(Residual = (\alpha + \mu_{jr}) + (\beta_1 + \nu_{jr}) \cdot BT \; + \; ... \; + e\)</span></p>
+<p><em>j</em> = day</p>
+<p><em>r</em> = climatic region</p>
+</section>
+<section id="stage-5-urban-gap-filling" class="slide level2">
+<h2>Stage 5: urban gap filling</h2>
+<p><img src="img/stage5.png" alt="stage5" /></p>
+<p><span class="math inline">\(Residual_{predicted} = (\alpha + \mu_{ip}) + (\beta_1 + \nu_{ip}) \cdot T_{IDW} + e\)</span></p>
+<p><em>i</em> = grid cell</p>
+<p><em>p</em> = period</p>
+</section>
+<section id="ta-model-status" class="slide level2">
+<h2>T<sub>a</sub> model status</h2>
+<h3 id="complete">Complete</h3>
+<ul>
+<li>T<sub>a</sub> 1 km estimates</li>
+</ul>
+<h3 id="in-progress">In progress</h3>
+<ul>
+<li>T<sub>a</sub> 200 m urban estimates</li>
+<li>T<sub>a</sub> paper</li>
+</ul>
+</section>
+<section id="pm-model-status" class="slide level2">
+<h2>PM model status</h2>
+<h3 id="in-progress-1">In progress</h3>
+<ul>
+<li>PM data preparation</li>
+</ul>
+<h3 id="forthcoming">Forthcoming</h3>
+<ul>
+<li>PM 1 km estimates
+<ul>
+<li>Estimate PM<sub>2.5</sub> at PM<sub>10</sub>-only stations</li>
+<li>Reduce MAIAC error using AERONET data <span class="citation" data-cites="Just2018">(Just et al., 2018)</span></li>
+</ul></li>
+<li>PM 200 m urban estimates</li>
+<li>PM paper</li>
+</ul>
+</section>
+<section id="birth-outcomes-study" class="slide level2 center">
+<h2>Birth outcomes study</h2>
+</section>
+<section id="unresolved-questions" class="slide level2">
+<h2>Unresolved questions</h2>
+<h3 id="windows-of-susceptibility">Windows of susceptibility</h3>
+<ul>
+<li>Mixed results to date</li>
+<li>PM exposure tends to be correlated across trimesters</li>
+</ul>
+<h3 id="acclimatization">Acclimatization</h3>
+<ul>
+<li>Suggested for mortality <span class="citation" data-cites="Gasparrini2015 Lee2014">(Gasparrini et al., 2015; Lee et al., 2014)</span></li>
+</ul>
+<h3 id="interactions-between-ta-and-pm">Interactions between T<sub>a</sub> and PM</h3>
+<ul>
+<li>Synergy suggested for mortality <span class="citation" data-cites="Kioumourtzoglou2016 Li2017">(Kioumourtzoglou et al., 2016; Li et al., 2017)</span></li>
+</ul>
+</section>
+<section id="study-design" class="slide level2">
+<h2>Study design</h2>
+<ul>
+<li>5923 mother-child pairs from three prospective cohorts</li>
+<li>Birth weight, term low birth weight, preterm birth</li>
+<li>High, low, and variable T<sub>a</sub> and PM</li>
+<li>Windows of susceptibility
+<ul>
+<li>Day, up to 7 days, week, 4 weeks, trimester, entire pregnancy</li>
+</ul></li>
+<li>Acclimatization</li>
+<li>Interactions</li>
+<li>Linear / logistic / Cox models
+<ul>
+<li>Distributed non-linear lags</li>
+</ul></li>
+</ul>
+</section>
+<section id="thank-you" class="slide level2 center">
+<h2>Thank you!</h2>
+</section>
+<section id="references" class="slide level2 unnumbered refslide">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-Barker2004">
+<p>Barker, D.J.P., 2004. The Developmental Origins of Adult Disease. Journal of the American College of Nutrition 23, 588S–595S. <a href="https://doi.org/10.1080/07315724.2004.10719428" class="uri">https://doi.org/10.1080/07315724.2004.10719428</a></p>
+</div>
+<div id="ref-Belbasis2016">
+<p>Belbasis, L., Savvidou, M.D., Kanu, C., Evangelou, E., Tzoulaki, I., 2016. Birth weight in relation to health and disease in later life: An umbrella review of systematic reviews and meta-analyses. BMC Medicine 14. <a href="https://doi.org/10.1186/s12916-016-0692-5" class="uri">https://doi.org/10.1186/s12916-016-0692-5</a></p>
+</div>
+<div id="ref-Gasparrini2015">
+<p>Gasparrini, A., Guo, Y., Hashizume, M., Lavigne, E., Zanobetti, A., Schwartz, J., Tobias, A., Tong, S., Rocklöv, J., Forsberg, B., Leone, M., De Sario, M., Bell, M.L., Guo, Y.-L.L., Wu, C.F., Kan, H., Yi, S.M., De Sousa Zanotti Stagliorio Coelho, M., Saldiva, P.H.N., Honda, Y., Kim, H., Armstrong, B., 2015. Mortality risk attributable to high and low ambient temperature: A multicountry observational study. The Lancet 386, 369–375. <a href="https://doi.org/10.1016/S0140-6736(14)62114-0" class="uri">https://doi.org/10.1016/S0140-6736(14)62114-0</a></p>
+</div>
+<div id="ref-Ha2017a">
+<p>Ha, S., Liu, D., Zhu, Y., Kim, S.S., Sherman, S., Mendola, P., 2017. Ambient temperature and early delivery of Singleton Pregnancies. Environmental Health Perspectives 125, 453–459. <a href="https://doi.org/10.1289/EHP97" class="uri">https://doi.org/10.1289/EHP97</a></p>
+</div>
+<div id="ref-Ha2017b">
+<p>Ha, S., Zhu, Y., Liu, D., Sherman, S., Mendola, P., 2017. Ambient temperature and air quality in relation to small for gestational age and term low birthweight. Environmental Research 155, 394–400. <a href="https://doi.org/10.1016/j.envres.2017.02.021" class="uri">https://doi.org/10.1016/j.envres.2017.02.021</a></p>
+</div>
+<div id="ref-Harrison2016">
+<p>Harrison, M.S., Goldenberg, R.L., 2016. Global burden of prematurity. Seminars in Fetal and Neonatal Medicine 21, 74–79. <a href="https://doi.org/10.1016/j.siny.2015.12.007" class="uri">https://doi.org/10.1016/j.siny.2015.12.007</a></p>
+</div>
+<div id="ref-Just2018">
+<p>Just, A., De Carli, M., Shtein, A., Dorman, M., Lyapustin, A., Kloog, I., 2018. Correcting Measurement Error in Satellite Aerosol Optical Depth with Machine Learning for Modeling PM2.5 in the Northeastern USA. Remote Sensing 10, 803. <a href="https://doi.org/10.3390/rs10050803" class="uri">https://doi.org/10.3390/rs10050803</a></p>
+</div>
+<div id="ref-Just2015">
+<p>Just, A.C., Wright, R.O., Schwartz, J., Coull, B.A., Baccarelli, A.A., Tellez-Rojo, M.M., Moody, E., Wang, Y., Lyapustin, A., Kloog, I., 2015. Using High-Resolution Satellite Aerosol Optical Depth To Estimate Daily PM2.5 Geographical Distribution in Mexico City. Environmental Science &amp; Technology 49, 8576–8584. <a href="https://doi.org/10.1021/acs.est.5b00859" class="uri">https://doi.org/10.1021/acs.est.5b00859</a></p>
+</div>
+<div id="ref-Kioumourtzoglou2016">
+<p>Kioumourtzoglou, M.-A., Schwartz, J., James, P., Dominici, F., Zanobetti, A., 2016. PM2.5 and mortality in 207 US cities: Modification by temperature and city characteristics. Epidemiology 27, 221–227. <a href="https://doi.org/10.1097/EDE.0000000000000422" class="uri">https://doi.org/10.1097/EDE.0000000000000422</a></p>
+</div>
+<div id="ref-Kloog2014">
+<p>Kloog, I., Chudnovsky, A.A., Just, A.C., Nordio, F., Koutrakis, P., Coull, B.A., Lyapustin, A., Wang, Y., Schwartz, J., 2014. A new hybrid spatio-temporal model for estimating daily multi-year PM2.5 concentrations across northeastern USA using high resolution aerosol optical depth data. Atmospheric Environment 95, 581–590. <a href="https://doi.org/10.1016/j.atmosenv.2014.07.014" class="uri">https://doi.org/10.1016/j.atmosenv.2014.07.014</a></p>
+</div>
+<div id="ref-Kloog2015">
+<p>Kloog, I., Melly, S.J., Coull, B.A., Nordio, F., Schwartz, J., 2015. Using Satellite-Based Spatiotemporal Resolved Air Temperature Exposure to Study the Association between Ambient Air Temperature and Birth Outcomes in Massachusetts. Environmental Health Perspectives 123, 1053–1058. <a href="https://doi.org/10.1289/ehp.1308075" class="uri">https://doi.org/10.1289/ehp.1308075</a></p>
+</div>
+<div id="ref-Kloog2017">
+<p>Kloog, I., Nordio, F., Lepeule, J., Padoan, A., Lee, M., Auffray, A., Schwartz, J., 2017. Modelling spatio-temporally resolved air temperature across the complex geo-climate area of France using satellite-derived land surface temperature data. International Journal of Climatology 37, 296–304. <a href="https://doi.org/10.1002/joc.4705" class="uri">https://doi.org/10.1002/joc.4705</a></p>
+</div>
+<div id="ref-Lamichhane2015">
+<p>Lamichhane, D.K., Leem, J.-H., Lee, J.-Y., Kim, H.-C., 2015. A meta-analysis of exposure to particulate matter and adverse birth outcomes. Environmental Health and Toxicology 30, e2015011. <a href="https://doi.org/10.5620/eht.e2015011" class="uri">https://doi.org/10.5620/eht.e2015011</a></p>
+</div>
+<div id="ref-Lee2014">
+<p>Lee, M., Nordio, F., Zanobetti, A., Kinney, P.L., Vautard, R., Schwartz, J., 2014. Acclimatization across space and time in the effects of temperature on mortality: a time-series analysis. Environmental Health 13, 89. <a href="https://doi.org/10.1186/1476-069X-13-89" class="uri">https://doi.org/10.1186/1476-069X-13-89</a></p>
+</div>
+<div id="ref-Li2017">
+<p>Li, J., Woodward, A., Hou, X.Y., Zhu, T., Zhang, J., Brown, H., Yang, J., Qin, R., Gao, J., Gu, S., Li, J., Xu, L., Liu, X., Liu, Q., 2017. Modification of the effects of air pollutants on mortality by temperature: A systematic review and meta-analysis. Science of the Total Environment 575, 1556–1570. <a href="https://doi.org/10.1016/j.scitotenv.2016.10.070" class="uri">https://doi.org/10.1016/j.scitotenv.2016.10.070</a></p>
+</div>
+<div id="ref-Liu2016">
+<p>Liu, L., Oza, S., Hogan, D., Chu, Y., Perin, J., Zhu, J., Lawn, J.E., Cousens, S., Mathers, C., Black, R.E., 2016. Global, regional, and national causes of under-5 mortality in 2000–15: an updated systematic analysis with implications for the Sustainable Development Goals. The Lancet 388, 3027–3035. <a href="https://doi.org/10.1016/S0140-6736(16)31593-8" class="uri">https://doi.org/10.1016/S0140-6736(16)31593-8</a></p>
+</div>
+<div id="ref-McCormick2011">
+<p>McCormick, M.C., Litt, J.S., Smith, V.C., Zupancic, J.A., 2011. Prematurity: An Overview and Public Health Implications. Annual Review of Public Health 32, 367–379. <a href="https://doi.org/10.1146/annurev-publhealth-090810-182459" class="uri">https://doi.org/10.1146/annurev-publhealth-090810-182459</a></p>
+</div>
+<div id="ref-Shtein2018">
+<p>Shtein, A., Karnieli, A., Katra, I., Raz, R., Levy, I., Lyapustin, A., Dorman, M., Broday, D.M., Kloog, I., 2018. Estimating daily and intra-daily PM10 and PM2.5 in Israel using a spatio-temporal hybrid modeling approach. Atmospheric Environment 191, 142–152. <a href="https://doi.org/10.1016/j.atmosenv.2018.08.002" class="uri">https://doi.org/10.1016/j.atmosenv.2018.08.002</a></p>
+</div>
+<div id="ref-Sun2015">
+<p>Sun, X., Luo, X., Zhao, C., Chung Ng, R.W., Lim, C.E.D., Zhang, B., Liu, T., 2015. The association between fine particulate matter exposure during pregnancy and preterm birth: A meta-analysis. BMC Pregnancy and Childbirth 15, 1–12. <a href="https://doi.org/10.1186/s12884-015-0738-2" class="uri">https://doi.org/10.1186/s12884-015-0738-2</a></p>
+</div>
+<div id="ref-Sun2016">
+<p>Sun, X., Luo, X., Zhao, C., Zhang, B., Tao, J., Yang, Z., Ma, W., Liu, T., 2016. The associations between birth weight and exposure to fine particulate matter (PM2.5) and its chemical constituents during pregnancy: A meta-analysis. Environmental Pollution 211, 38–47.</p>
+</div>
+<div id="ref-Zhang2017">
+<p>Zhang, Y., Yu, C., Wang, L., 2017. Temperature exposure during pregnancy and birth outcomes: An updated systematic review of epidemiological evidence. Environmental Pollution 225, 700–712. <a href="https://doi.org/10.1016/j.envpol.2017.02.066" class="uri">https://doi.org/10.1016/j.envpol.2017.02.066</a></p>
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script src="research_proposal_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="research_proposal_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        // Optional reveal.js plugins
+        dependencies: [
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

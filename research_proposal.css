@@ -1,0 +1,56 @@
+.reveal .slides {
+	text-align: left;
+}
+
+.reveal .center {
+	text-align: center;
+}
+
+.reveal h1 {
+	font-size: 1.8em;
+}
+.reveal h2 {
+	font-size: 1.4em;
+}
+.reveal h3 {
+	font-size: 1.2em;
+}
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+	margin: 40px 0px 20px 0px;
+	text-transform: none;
+}
+
+.reveal img {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.reveal .logos {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.reveal .logos img {
+	background: #ffffff !important;
+	height: 80px;
+}
+
+.reveal .red {
+	color: red;
+}
+
+.reveal .citation {
+	font-size: 0.5em;
+	vertical-align: super;
+}
+
+.reveal .references {
+	font-size: 0.5em !important;
+	height: 640px;
+	overflow-y: scroll;
+}
