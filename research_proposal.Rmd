@@ -21,7 +21,7 @@ csl: remote-sensing-of-environment.csl
 
 Ian Hough
 
-2018-10-16
+2018-10-24
 
 Advisors Itai Kloog & Johanna Lepeule
 
@@ -74,15 +74,13 @@ Advisors Itai Kloog & Johanna Lepeule
 
 #####
 
-<div style="float: left">
-|           | Preterm birth       | Birth weight         | Term low birth weight |
-|-----------|---------------------|----------------------|-----------------------|
-| Exposure  | Cold (<10th %ile)   | IQR Ta increase      | Heat (>95th %ile)     |
-| Window    | Weeks 1–7           | Last 30 days         | Trimester 3           |
-| Statistic | Relative risk       | Decrease             | Odds ratio            |
-| Effect    | 1.09 [1.04–1.15]^a^ | 16.6 g [5.9–27.4]^b^ | 1.31 [1.15–1.49]^c^   |
-| Study     | [@Ha2017a]          | [@Kloog2015]         | [@Ha2017b]            |
-</div>
+|           | Preterm birth     | Birth weight      | Term low birth weight |
+|-----------|-------------------|-------------------|-----------------------|
+| Exposure  | Cold (<10th %ile) | IQR Ta increase   | Heat (>95th %ile)     |
+| Window    | Weeks 1–7         | Last 30 days      | Trimester 3           |
+| Statistic | Relative risk     | Decrease          | Odds ratio            |
+| Effect    | 1.09 [1.04–1.15]  | 16.6 g [5.9–27.4] | 1.31 [1.15–1.49]      |
+| Study     | [@Ha2017a]        | [@Kloog2015]      | [@Ha2017b]            |
 
 
 
@@ -92,8 +90,8 @@ Advisors Itai Kloog & Johanna Lepeule
 
 |           | Preterm birth     | Birth weight       | Term low birth weight |
 |-----------|-------------------|--------------------|-----------------------|
-| Statistic | Pooled odds ratio | Pooled decrease    | Too few studies       |
-| Effect    | 0.97 [0.86--1.08] | 10.3 g [7.1--13.6] |                       |
+| Statistic | Pooled odds ratio | Pooled decrease    |                       |
+| Effect    | 0.97 [0.86--1.08] | 10.3 g [7.1--13.6] | Too few studies       |
 | Study     | [@Lamichhane2015] | [@Lamichhane2015]  |                       |
 
 
@@ -136,7 +134,7 @@ Sparse monitoring networks
 
 &rarr; Error in exposure estimate
 
-&nbsp;&nbsp;&nbsp;&nbsp;&rarr; May bias effect estimates towards null
+&rarr; May bias effect estimates towards null
 
 
 
@@ -274,30 +272,6 @@ $T_{a\ predicted} = (\alpha + \mu_{ip}) + (\beta_1 + \nu_{ip}) \cdot T_{IDW} + e
 ### Building footprints + height
 
 * Skyview factor
-
-
-
-## Stage 4: urban calibration
-
-![stage4](img/stage4.png)
-
-$Residual = (\alpha + \mu_{jr}) + (\beta_1 + \nu_{jr}) \cdot BT \; + \; ... \; + e$
-
-*j* = day
-
-*r* = climatic region
-
-
-
-## Stage 5: urban gap filling
-
-![stage5](img/stage5.png)
-
-$Residual_{predicted} = (\alpha + \mu_{ip}) + (\beta_1 + \nu_{ip}) \cdot T_{IDW} + e$
-
-*i* = grid cell
-
-*p* = period
 
 
 
